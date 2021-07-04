@@ -155,13 +155,31 @@
     height: auto;
 }
 
+#firstSection__startedButton{
+    border: none;
+    outline: none;
 
+    font-size: 18px;
+    font-weight: 600;
+    color: #eee;
+    background-color: #000;
+    min-width: 140px;
+    min-height: 60px;
+    border-radius: 5px;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+#firstSection__startedButton:hover{
+    color: #bbb;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 1000px) {
     .firstSection-container{
         flex-direction: column-reverse;
     }
-
+    
     .firstSection__right-container-box{
         justify-content: flex-start;
     }
@@ -183,4 +201,28 @@
         position: relative;
         top: -30%;
     } 
+}
+
+@media only screen and (max-width: 450px) {
+    .firstSection__right-container-box{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .firstSection__submit-email-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+    }
+
+    .firstSection__input{
+        margin-bottom: 10px;
+    }
+
+    #firstSection__startedButton{
+        margin: 10px 10px 0px 10px;
+    }
 }
