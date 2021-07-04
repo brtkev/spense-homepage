@@ -1,0 +1,186 @@
+
+
+.firstSection-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.firstSection__left-container-box{
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 60px 0;
+}
+
+
+
+.firstSection__heading{
+    color: #222;
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.firstSection__text{
+    color: #888;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+
+.firstSection__list-item{
+    margin: 7.5px 0px;
+    list-style: none;
+    
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: center;
+
+    
+}
+
+.firstSection__list-text{
+    color: #666;
+    font-weight: 800;
+}
+
+.checkmark-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.firstSection__submit-email-box{
+    margin-top: 20px;
+}
+
+.firstSection__input{
+    min-width: 170px;
+    min-height: 60px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    
+}
+
+.firstSection__input::placeholder{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+}
+
+.firstSection__right-container-box{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+
+}
+
+.firstSection__earnings-box{
+    position: absolute;
+    z-index: 10;
+    width: 170px;
+    height: 150px;
+    background-color: #fff;
+    margin: 40px;
+    border-radius: 10px;
+    padding: 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+
+.firstSection__earnings-title{
+    font-size: 20px;
+    font-weight: 200;
+    color: #111;
+}
+
+.firstSection__earnings-separator{
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+
+}
+
+.firstSection__earnings-text{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+
+.firstSection__withdraw-button{
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #eee;
+    background-color: #000;
+    min-width: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.firstSection__withdraw-button:hover{
+    color: #bbb;
+    cursor: pointer;
+}
+
+.firstSection__image{
+    width: 35vw;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.firstSection__image img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .firstSection-container{
+        flex-direction: column-reverse;
+    }
+
+    .firstSection__right-container-box{
+        justify-content: flex-start;
+    }
+    .firstSection__image{
+        /* width: 100%; */
+        width: auto;
+        height: 400px;
+        
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+
+
+    }
+    
+    .firstSection__image img{
+        max-width: 100%;
+        height: 600px;
+        position: relative;
+        top: -30%;
+    } 
+}
